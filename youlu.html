@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>有路网</title>
+    <link rel="stylesheet" href="../idea/widows.css">
+    <style>
+        .navi {
+            width: 1422px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #F7F7F7;
+        }
+
+        .allbar {
+            width: 1422px;
+            height: 134px;
+        }
+
+        .rnav {
+            width: 1422px;
+            height: 38px;
+            background-color:#DE0000 ;
+        }
+
+        .alldiv {
+            width: 210px;
+            height: 1000px;
+            margin-left: 113px;
+        }
+
+        .null {
+            width: 990px;
+            height: 31px;
+            background-color: hotpink;
+        }
+
+        .botmo-ringt {
+            width: 990px;
+            height: 100px;
+            /*background-color: darkmagenta;*/
+            float: right;
+            margin-top: -1000px;
+            margin-right: 110px;
+        }
+
+        .rigtt-left {
+            width: 1200px;
+            height: 1000px;
+            /*background-color: #00FFFF;*/
+            float: left;
+        }
+
+        .bottmo-left {
+            height: 900px;
+            width: 770px;
+            /*background-color: cadetblue;*/
+            float: left;
+        }
+        .bottmo-left .lun{
+            width: 750px;
+            height: 340px;
+            background-color: red;
+            margin-left: 10px;
+        }
+        .bottmo-left .yhead{
+            width: 750px;
+            height: 500px;
+            float: left;
+            margin-left: 10px;
+        }
+        .bottmo1-rigth{
+            width: 220px;
+            height: 800px;
+            float: left;
+
+        }
+
+     /*顶部*/
+        .navi li{
+            display: inline;
+            /*padding: 0px 8px;*/
+
+        }
+        .navi .hello{
+            margin-left: 90px;
+            color: #636363;
+            margin-right:400px; ;
+        }
+        .navi a{
+            color: black;
+            padding: 0px 10px;
+            border-right: 1px solid #DEDEDE;
+
+        }
+        .navi a:hover{
+            color: orangered;
+            text-decoration: underline;
+
+        }
+        .navi .loing{
+            color: red;
+        }
+        .navi .wchar{
+            border: 0px;
+        }
+        .navi .loing:hover{
+            border: 0px;
+            text-decoration: underline;
+        }
+/*搜索*/
+        .allbar .tu img{
+            width: 421px;
+            height: 54px;
+            float: left;
+            margin-top:36px ;
+            margin-left:77px ;
+            margin-right: 65px;
+        }
+        .allbar .sous{
+
+            float: left;
+        }
+        .allbar .sous ul li{
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+        .allbar .sous ul a{
+            color: black;
+        }
+        .allbar .sous ul a:hover{
+            color: orangered;
+            text-decoration: underline;
+        }
+        .allbar .sou{
+
+            height: 30px;
+            margin-top: 40px;
+            float: left;
+        }
+        .allbar .sou .wenben{
+            font-size: 16px ;
+            width: 374px;
+            height: 30px;
+            border: 3px solid red;
+        }
+        .allbar .sou .s{
+            color:white ;
+            letter-spacing: 10px;
+            font-weight: bold;
+            font-size: 16px ;
+            width: 100px;
+            height: 38px;
+            background-color: red;
+            border: 3px solid red;
+            margin-left: -10px;
+            cursor: pointer;}
+        .allbar .shop{
+            display: inline;
+            float: right;
+            margin-top: 36px;
+            margin-right:116px ;
+        }
+        .allbar .shop .car{
+            display: inline;
+        }
+        .allbar .shop ul{
+            display: inline-block;
+        }
+        .allbar .shop ul a{
+            color: black;
+        }
+        .allbar .shop ul a:hover{
+            text-decoration: underline;
+        }
+        .allbar .shop ul span{
+            color: red;
+        }
+
+        /*红色导航*/
+        .rnav li{
+            line-height: 38px;
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .rnav .all{
+            width: 210px;
+            background-color:#CE0000 ;
+            margin-left: 120px ;
+
+        }
+        .all a{
+            padding-left: 25px;
+        }
+        .rnav li a{
+            color: white;
+        }
+        .rnav .shou{
+
+            padding: 0px 20px;
+        }
+        .rnav .shou:hover{
+            background-color:#CE0000 ;
+        }
+        /*图书分类分类*/
+        .alldiv ul {
+            width: 210px;
+            /*height: 108px;*/
+            border-right: 1px solid #DEDEDE;
+            border-left:1px solid #DEDEDE;
+            border-bottom: 1px dashed #DEDEDE;
+        }
+        .alldiv .mar {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+
+        }
+        .alldiv a {
+            color: #6B6B6B;
+            font-size: 12px;
+
+        }
+        .alldiv li {
+            padding-left: 36px;
+            padding-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+
+        }
+        .alldiv a:hover {
+            text-decoration: underline;
+        }
+        .alldiv .fur {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+        }
+        .alldiv .per {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+        }
+        .alldiv .sec {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+        }
+        .alldiv .lief {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+        }
+        .alldiv .ideu {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+        }
+        .alldiv .look a {
+            width: 160px;
+            line-height: 24px;
+            padding-left: 30px;
+            font-size: 15px;
+            color: #424242;
+            padding-left: 10px;
+        }
+        .alldiv .look a:hover {
+            color: orangered;
+            text-decoration: underline;
+        }
+        .alldiv .look {
+            padding-top: 12px;
+            border-right: 1px solid #DEDEDE;
+        }
+        .alldiv .pic {
+            border-right: 1px solid #DEDEDE;
+            border-bottom: 1px solid #DEDEDE;
+
+        }
+
+        .lun{
+            width: 750px;
+            height:340px;
+            margin: 8px 8px;
+            border: 1px solid red;
+            position: relative;
+        }
+        .lun ul li{
+            display: inline-block;
+            color: white;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 8px;
+            text-align: center;
+            background-color: gray;
+            /*border: 1px solid gray;*/
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+        .lun ul{
+
+            position: absolute;
+            top: 296px;
+            right: 12px;
+        }
+
+
+        .yhead {
+            width: 750px;
+            height: 600px;
+            margin: 0px auto;
+        }
+        .yhead .fast ul {
+            height: 56px;
+            border-bottom: 1px solid #DEDEDE;
+            padding-left: 20px;
+
+        }
+        .yhead .fast ul li {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 40px;
+            display: inline-block;
+            position: relative;
+            top: 16px;
+
+        }
+        .yhead .fast ul .x1 {
+            float: right;
+            position: relative;
+            right: 15px;
+        }
+        .yhead .fast ul .x1 .x2 {
+            font-size: 16px;
+            color: red;
+        }
+        .yhead .fast ul .x1 .x3 {
+            font-size: 16px;
+            color: #9C9C9C;
+
+        }
+        .yhead .books {
+            height: 560px;
+
+        }
+        .yhead .books li {
+            line-height: 20px;
+            float: left;
+            padding-left: 50px;
+            padding-top: 16px;
+
+        }
+        .yhead .books li img {
+            max-width: 160px;
+            height: 170px;
+        }
+
+        .yhead .books .thearf {
+            margin-left: 52px;
+
+        }
+        .books .bookname a {
+            color: #424242;
+            font-size: 12px;
+        }
+        .books .bookname a:hover {
+            color: orangered;
+            text-decoration: underline;
+        }
+        .books .auther {
+            color: #9C9C9C;
+            font-size: 12px;
+        }
+        .books .price .x4 {
+            margin-right: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: red;
+        }
+        .books .price .x5 {
+            font-size: 13px;
+            color: gray;
+            text-decoration: line-through;
+        }
+        .books ul li .aupri {
+            margin: 8px 0px;
+            line-height: 20px;
+        }
+
+        .all{
+            background-color:#FFFFFF ;
+
+            width: 220px;
+        }
+        .all a{
+            color: #424242;
+        }
+        .all a:hover{
+            color: orangered;
+            text-decoration: underline;
+        }
+        .blackbord{
+            height: 130px;
+            border-bottom: 1px solid #EFEFEF;
+            border-right: 1px solid #EFEFEF;
+        }
+        .all ul{
+            line-height: 22px;
+            padding-left: 30px
+        }
+        .shopping{
+            height: 186px;
+            border-right: 1px solid #EFEFEF;
+            border-bottom: 1px solid #EFEFEF;
+
+        }
+        .all h1{
+            font-size: 18px;
+            /*margin-top: 10px;*/
+            margin-left: 10px;
+        }
+        .blackbord h1{
+            margin-bottom: 10px;
+        ;
+        }
+        .shopping h1{
+            margin-bottom: 8px;
+        }
+        .pic{
+            margin-top: 12px;
+            padding-right: 60px;
+
+        }
+
+
+
+        .hotsail .nowhot{
+            font-size: 16px;
+            text-align: center;
+            width: 220px;
+            height: 42px;
+            line-height: 49px;
+            padding-top: 5px;
+
+        }
+
+        .hotsail ul{
+            border: 1px solid #CECECE;
+
+        }
+
+        .hotsail ul li{
+            border-bottom: 1px dashed #CECECE;
+        }
+        .hotsail ul li .boonam {
+            width: 220px;
+            height: 46px;
+            font-size: 13px;
+            line-height: 46px;
+        }
+
+        .hotsail ul li .boonam a{
+            color:#424242 ;
+        }
+        .hotsail ul li .boonam span {
+            margin:0px 8px;
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .hotsail ul li .boonam .span1{
+            margin-left: 12px;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /*隐藏部分*/
+        .hotsail ul li .bookpic{
+            width: 220px;
+            display: inline-block;
+
+
+
+        }
+        .hotsail ul li .bookpic .spa1{
+            display: inline-block;
+            margin-left: 12px;
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .hotsail ul li .bookpic .spa2{
+            display: inline-block;
+            margin:0px 10px;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            float: left;
+            margin-top: 20px;
+        }
+        .hotsail ul li .bookpic .pictures{
+            display: inline-block;
+            margin-bottom: 20px;
+
+        }
+        .hotsail ul li .bookpic .pictures img{
+            display: inline-block;
+            max-width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            float: left;
+
+
+        }
+
+        .hotsail ul li .bookpic .ul0{
+            display: inline-block;
+            margin-bottom: 20px;
+            float: right;
+            margin-top: 18px;
+
+        }
+        .hotsail ul li .bookpic .ul0 a{
+            width: 100px;
+            display: block;
+            font-size: 14px;
+            color:#424242;
+
+        }
+
+        .hotsail ul li .bookpic .ul0 a:hover{
+            color:#EF9408;
+            text-decoration: underline;
+
+        }
+
+        .hotsail ul li .bookpic .ul0 .word{
+            margin-top: 10px;
+
+        }
+        .hotsail ul li .bookpic .ul0 .word .p1{
+            color: red;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .hotsail ul li .bookpic .ul0 .word .p2{
+            color: #9C9C9C;
+            font-size: 14px;
+            text-decoration:line-through;
+        }
+
+        .hotsail ul li .bookpic{
+            display: none;
+        }
+        .hotsail ul li:hover .boonam{
+            display: none;
+        }
+
+        .hotsail ul li:hover .bookpic{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+    <div class="navi">
+        <ul>
+        <li class="hello">
+        <img src="../picture/welcome.jpg">
+        <span>您好，欢迎光临有路网！</span>
+        </li>
+        <li><a href="#" class="loing">请登陆</a></li>
+        <li><a href="#">免费注册 </a></li>
+        <li><a href="#">我的有路</a></li>
+        <li><a href="#">我要开店</a></li>
+        <li><a href="#">团购批发</a></li>
+        <li><a href="#">客服服务</a></li>
+        <li><a href="#"> <img src="../picture/ico_phone.gif">手机有路</a></li>
+        <li ><a href="#" class="wchar" >微信公众号</a></li>
+        </ul>
+    </div>
+    <div class="allbar">
+        <div class="tu"><a href="#"><img src="../picture/logo.jpg"></a></div>
+        <div class="sous">
+            <div class="sou">
+                <form>
+                    <input type="text" class="wenben" placeholder="书名，作者，出版社，ISBN，文具">
+                    <input type="button" value="搜索" class="s">
+                </form>
+            </div>
+            <ul>
+                <li>热门搜索:</li>
+                <li><a href="#">公务员考试</a></li>
+                <li><a href="#">四六级</a></li>
+                <li><a href="#">高等数学</a></li>
+                <li><a href="#">自考</a></li>
+            </ul>
+        </div>
+        <div class="shop">
+            <div class="car">
+                <img src="../picture/cart.jpg">
+            </div>
+            <ul>
+                <li><a href="#">网站购物车<span>0</span>本</a></li>
+                <li><a href="#">店铺购物车<span>0</span>本</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rnav">
+        <ul>
+            <li class="all"><a href="#">全部图书分类</a></li>
+            <li class="shou"><a href="#">首页</a></li>
+            <li class="shou"> <a href="#">分类</a></li>
+            <li class="shou"> <a href="#">特卖</a></li>
+            <li class="shou"><a href="#">入驻商家</a></li>
+            <li class="shou"><a href="#">文具</a> </li>
+            <li class="shou"> <a href="#">考试</a></li>
+            <li class="shou"><a href="#">电子书</a></li>
+
+        </ul>
+    </div>
+    <div class="botmom">
+        <div class="alldiv">
+            <ul>
+                <li>经济管理</li>
+                <div class="mar">
+                    <a href="kindofbook.html">市场营销</a>
+
+                    <a href="kindofbook.html">经济学理论</a>
+
+                    <a href="kindofbook.html">国际贸易</a>
+
+                    <a href="kindofbook.html">物流管理</a>
+
+                    <a href="kindofbook.html">管理学原理</a>
+
+                    <a href="kindofbook.html">财务管理</a>
+                </div>
+            </ul>
+            <ul>
+                <li>文学艺术</li>
+                <div class="fur"><a href="kindofbook.html">设计</a>
+
+                    <a href="kindofbook.html">音乐</a>
+
+                    <a href="kindofbook.html">青春文学</a>
+
+                    <a href="kindofbook.html">绘画人物传记</a>
+
+                    <a href="kindofbook.html">外国文学</a>
+
+                </div>
+            </ul>
+
+            <ul>
+                <li>人文社科</li>
+                <div class="per"><a href="kindofbook.html">市场营销</a>
+
+                    <a href="kindofbook.html">数学</a>
+
+                    <a href="kindofbook.html">英语教材</a>
+
+                    <a href="kindofbook.html">化学</a>
+
+                    <a href="kindofbook.html">日语</a>
+
+                    <a href="kindofbook.html">生物科学</a>
+                    <a href="kindofbook.html">专业英语</a></div>
+            </ul>
+            <ul>
+                <li>科学技术</li>
+                <div class="sec"><a href="kindofbook.html">市场营销</a>
+
+                    <a href="kindofbook.html">语言与编程</a>
+
+                    <a href="kindofbook.html">电子通信</a>
+
+                    <a href="kindofbook.html">电工电子</a>
+
+                    <a href="kindofbook.html">数据库</a>
+
+                    <a href="kindofbook.html">建筑工程</a>
+
+                    <a href="kindofbook.html">土木工程</a></div>
+            </ul>
+            <ul>
+                <li>生活休闲</li>
+                <div class="lief"><a href="kindofbook.html">市场营销</a>
+
+                    <a href="kindofbook.html">家庭保健</a>
+
+                    <a href="kindofbook.html">美食烹饪</a>
+
+                    <a href="kindofbook.html">导游必备</a>
+
+                    <a href="kindofbook.html">地理学理论</a>
+
+                    <a href="kindofbook.html">动漫卡通</a>
+
+                    <a href="kindofbook.html">球类</a></div>
+            </ul>
+            <ul>
+                <li>教育考试</li>
+                <div class="ideu"><a href="kindofbook.html">市场营销</a>
+
+                    <a href="kindofbook.html">教学理论</a>
+
+                    <a href="kindofbook.html">自考</a>
+
+                    <a href="kindofbook.html">研究生考试</a>
+
+                    <a href="kindofbook.html">考研英语</a>
+
+                    <a href="kindofbook.html">公务员考试</a>
+
+                    <a href="kindofbook.html">初高中用书</a></div>
+                <div class="look"><a href="kindofbook.html">浏览所有图书分类</a></div>
+                <div class="pic"><a href="kindofbook.html"><img src="../picture/haoshu.jpg"></a></div>
+
+            </ul>
+
+        </div>
+        <div class="botmo-ringt">
+            <div class="null"></div>
+            <div class="rigtt-left">
+                <div class="bottmo-left">
+                    <div class="lun">
+                        <div class="pic"><img src="../picture/dazhuanpan.jpg"> </div>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                    <div class="yhead">
+                        <div class="fast">
+                            <ul>
+                                <li><img src="../img/laba.jpg"></li>
+                                <li>推荐图书</li>
+                                <li class="x1"><span class="x2">1</span><span class="x3">/4</span></li>
+                            </ul>
+                        </div>
+                        <div class="books">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="../img/狼图腾.jpg"></a>
+                                    <div class="bookname"><a href="#">狼图腾（修订版）</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">姜戎</div>
+                                        <div class="price"><span class="x4">¥15.90</span><span class="x5">¥39.80</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../img/文化苦旅.jpg"></a>
+                                    <div class="bookname"><a href="#">文化苦旅-新版</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">余秋雨</div>
+                                        <div class="price"><span class="x4">¥15.20</span><span class="x5">¥38.00</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../img/平凡的世界.jpg"></a>
+                                    <div class="bookname"><a href="#">平凡的世界(全三册)</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">路遥</div>
+                                        <div class="price"><span class="x4">¥31.90</span><span class="x5">¥79.80</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="../img/偷影子的人.jpg"></a>
+                                    <div class="thearf">
+                                        <div class="bookname"><a href="#">偷影子的人</a></div>
+                                        <div class="aupri">
+                                            <div class="auther">[法]马克.李维</div>
+                                            <div class="price"><span class="x4">¥11.90</span><span class="x5">¥29.80</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../img/摆渡人.jpg"></a>
+                                    <div class="bookname"><a href="#">摆渡人</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">百花洲文艺出版社</div>
+                                        <div class="price"><span class="x4">¥14.40</span><span class="x5"> ¥36.00</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="../img/人类简史.jpg"></a>
+                                    <div class="bookname"><a href="#">人类简史</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">中信出版社</div>
+                                        <div class="price"><span class="x4">¥27.20</span><span class="x5">¥68.00</span></div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <a href="#"> <img src="../img/蔡永康.jpg"></a>
+
+                                    <div class="bookname"><a href="#">蔡永康的说话之道(共2册</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">蔡永康</div>
+                                        <div class="price"><span class="x4">¥26.00</span><span class="x5">¥65.00</span></div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../img/将来的你.jpg"></a>
+
+                                    <div class="bookname"><a href="#">将来的你</a></div>
+                                    <div class="aupri">
+                                        <div class="auther">汤木</div>
+                                        <div class="price"><span class="x4">¥12.80</span><span class="x5">¥32.00</span></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottmo1-rigth">
+                    <div class="all">
+                        <div class="blackbord">
+                            <h1>黑板报</h1>
+                            <ul>
+                                <li><a href="#">双十一积分兑好礼</a></li>
+                                <li><a href="#">有路网国庆中秋放假通知！</a></li>
+                                <li><a href="#">积分大抽奖，好礼送不停</a></li>
+                                <li><a href="#">有路网开学红包第五季</a></li>
+                            </ul>
+                        </div>
+                        <div class="shopping">
+                            <h1>购物指南</h1>
+                            <ul>
+                                <li><a href="#">支付宝担保交易，安全快捷礼礼</a></li>
+                                <li><a href="#">保证24小时之内发货！</a></li>
+                                <li><a href="#">赠送积分，积分可用于支付</a></li>
+                                <li><a href="#">收货后7天内可以无理由退货</a></li>
+                                <li><a href="#">提供电子商务小包、EMS、快递</a></li>
+                                <li><a href="#">配送造成的所有损失由我们承担</a></li>
+                                <li><a href="#">提供免费短信提醒服务</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="pic"><img src="../picture/zhinan.jpg"></div>
+                    </div>
+                    <div class="hotsail">
+                        <div class="nowhot"> <img src="../img/rank.png">近期热销榜</div>
+                        <ul>
+                            <li>
+                                <div class="boonam"><a href="#"><span>1</span>萤火虫小巷</a></div>
+                                <div class="bookpic">
+                                    <span class="spa1">1</span>
+                                    <div class="pictures"><img src="../img/萤火虫小巷.jpg"></div>
+                                    <div class="ul0">
+                                        <a href="#">萤火虫小巷</a>
+                                        <div class="word">
+                                            <p class="p1">¥14.40</p>
+                                            <p class="p2">¥36.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="boonam"><a href="#"><span>2</span>如果蜗牛有爱情(上下)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa1">2</span>
+                                    <div class="pictures"><img src="../img/蜗牛爱情.jpg"></div>
+                                    <div class="ul0"><a href="#">如果蜗牛有爱情(上下)</a>
+                                        <div class="word">
+                                            <p class="p1">¥25.00</p>
+                                            <p class="p2">¥49.80</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"> <a href="#"><span>3</span>语言学纲要(修订版)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa1">3</span>
+                                    <div class="pictures"><img src="../img/语言学纲要.jpg"></div>
+                                    <div class="ul0"><a href="#">语言学纲要(修订版)</a>
+                                        <div class="word">
+                                            <p class="p1">¥14.40</p>
+                                            <p class="p2">¥36.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"> <a href="#"><span class="span1">4</span>管理信息系统(第五版)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">4</span>
+                                    <div class="pictures"><img src="../img/管理信息.jpg"></div>
+                                    <div class="ul0"><a href="#">管理信息系统(第五版)</a>
+                                        <div class="word">
+                                            <p class="p1">¥6.50</p>
+                                            <p class="p2">¥26.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"> <a href="#"><span class="span1">5</span>数字信号处理(第三版)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">5</span>
+                                    <div class="pictures"><img src="../img/数字信号.jpg"></div>
+                                    <div class="ul0"><a href="#">数字信号处理(第三版)</a>
+                                        <div class="word">
+                                            <p class="p1">¥7.00</p>
+                                            <p class="p2">¥32.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"> <a href="#"><span class="span1">6</span>美国文学选读(第三版)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">6</span>
+                                    <div class="pictures"><img src="../img/美国文学.jpg"></div>
+                                    <div class="ul0"><a href="#">美国文学选读(第三版)</a>
+                                        <div class="word">
+                                            <p class="p1">¥9.00</p>
+                                            <p class="p2">¥37.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"><a href="#"><span class="span1">7</span>C程序设计(第四版)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">7</span>
+                                    <div class="pictures"><img src="../img/数字信号.jpg"></div>
+                                    <div class="ul0"><a href="#">C程序设计(第四版)</a>
+                                        <div class="word">
+                                            <p class="p1">¥6.60</p>
+                                            <p class="p2">¥29.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"><a href="#"><span class="span1">8</span>高等数学(第六版)(下册)</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">8</span>
+                                    <div class="pictures"><img src="../img/高数.jpg"></div>
+                                    <div class="ul0"><a href="#">高等数学(第六版)(下册)</a>
+                                        <div class="word">
+                                            <p class="p1">¥5.50</p>
+                                            <p class="p2">¥29.40</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"><a href="#"><span class="span1">9</span>细节决定美丽</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">9</span>
+                                    <div class="pictures"><img src="../img/细节决定美丽.jpg"></div>
+                                    <div class="ul0"><a href="#">细节决定美丽</a>
+                                        <div class="word">
+                                            <p class="p1">¥11.20</p>
+                                            <p class="p2">¥28.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="boonam"><a href="#"><span class="span1">10</span>上班族妈妈</a></div>
+                                <div class="bookpic">
+                                    <span class="spa2">10</span>
+                                    <div class="pictures"><img src="../img/上班族.jpg"></div>
+                                    <div class="ul0"><a href="#">上班族妈妈</a>
+                                        <div class="word">
+                                            <p class="p1">¥15.40</p>
+                                            <p class="p2">¥38.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
